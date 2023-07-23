@@ -24,7 +24,7 @@ const Head = () => {
         // strokeLinejoin="round"
       >
         {/* Replace 'myImage.svg' with the path to your SVG image */}
-        <image href="public/logo192.png" width="40" height="40" />
+        <image href='whatever' src={require('../images/logo192.png')} width="40" height="40" />
       </svg>
     </div>
   );
