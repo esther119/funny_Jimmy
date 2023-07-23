@@ -26,7 +26,7 @@ const Head = () => {
         // strokeLinecap="round"
         // strokeLinejoin="round"
       >
-        <image alt='whatever' src={head_img} width="40" height="40" />
+        <image href='why' alt='whatever' src={head_img} width="40" height="40" />
       </svg>
     </div>
   );
