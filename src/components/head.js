@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import audio_file from '../sound/guess_how_much.mp3'
+import headimage from '../images/head.svg';
 
-const Head = (props) => {
+const Head = () => {
   const handleClick = () => {
     const sound = new Audio(audio_file);
     sound.play();
@@ -9,7 +10,7 @@ const Head = (props) => {
 
   return (
     <div>         
-        <img src={props.image} 
+        <img src={headimage}
         onClick={handleClick}
         style={{ cursor: 'pointer' }}
         />
