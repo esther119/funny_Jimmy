@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 
-const LeftHand = require('./LeftHand');
-const RightHand = require('./RightHand');
-const LeftLeg = require('./LeftLeg');
-const RightLeg = require('./RightLeg');
-const head = require('./head');
-const body = require('./body');
+const LeftHand = require('./components/LeftHand');
+const RightHand = require('./components/RightHand');
+const LeftLeg = require('./components/LeftLeg');
+const RightLeg = require('./components/RightLeg');
+const head = require('./components/head');
+const body = require('./components/body');
 
 
 function App() {
