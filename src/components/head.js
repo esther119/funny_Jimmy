@@ -1,13 +1,8 @@
 import React, { useRef } from 'react';
 import audio_file from '../sound/guess_how_much.mp3'
-import head_img from '../images/head.svg'
 
-
-
-const Head = () => {
+const Head = (props) => {
     const svgRef = useRef(null);
-    console.log("svg head");
-    console.log(head_img);
 
   const handleClick = () => {
     const sound = new Audio(audio_file);
@@ -27,8 +22,10 @@ const Head = () => {
         // strokeWidth="2"
         // strokeLinecap="round"
         // strokeLinejoin="round"
+        src={props.image}
       >
-        <image alt='whatever' src={head_img} width="40" height="40" />
+         
+        {/* <image onClick={handleClick} alt='whatever' src={props.image}  width="40" height="40" /> */}
       </svg>
     </div>
   );
