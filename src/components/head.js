@@ -1,11 +1,13 @@
 import React, { useRef } from 'react';
 import audio_file from '../sound/guess_how_much.mp3'
-import head_img from '../images/logo192.png'
+import head_img from '../images/head.svg'
+
 
 
 const Head = () => {
     const svgRef = useRef(null);
-    // console.log(head_img);
+    console.log("svg head");
+    console.log(head_img);
 
   const handleClick = () => {
     const sound = new Audio(audio_file);
