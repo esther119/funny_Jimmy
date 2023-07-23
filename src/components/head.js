@@ -1,8 +1,11 @@
 import React, { useRef } from 'react';
 import audio_file from '../sound/guess_how_much.mp3'
+import head_img from '../images/logo192.png'
+
 
 const Head = () => {
-  const svgRef = useRef(null);
+    const svgRef = useRef(null);
+    // console.log(head_img);
 
   const handleClick = () => {
     const sound = new Audio(audio_file);
@@ -23,8 +26,7 @@ const Head = () => {
         // strokeLinecap="round"
         // strokeLinejoin="round"
       >
-        {/* Replace 'myImage.svg' with the path to your SVG image */}
-        <image href='whatever' src={require('../images/logo192.png')} width="40" height="40" />
+        <image alt='whatever' src={head_img} width="40" height="40" />
       </svg>
     </div>
   );
