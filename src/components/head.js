@@ -1,12 +1,33 @@
-// Import the html-react-parser package
-const React = require('react');
-const htmlReactParser = require('html-react-parser');
+import React, { useRef } from 'react';
+import audio_file from '../sound/guess_how_much.mp3'
 
-// Your SVG code
-const svgCode = '<svg width="100" height="100"> <circle cx="50" cy="50" r="40" fill="blue" /> </svg>'
+const Head = () => {
+  const svgRef = useRef(null);
 
-// Convert the SVG code to JSX
-const svgComponent = htmlReactParser(svgCode);
+  const handleClick = () => {
+    const sound = new Audio(audio_file);
+    sound.play();
+  };
 
-// Export the JSX component so you can use it in other files
-module.exports = svgComponent;
+  return (
+    <div className="flex justify-center items-center h-screen">
+      <svg
+        ref={svgRef}
+        onClick={handleClick}
+        className="cursor-pointer w-40 h-40 p-2 bg-gray-300 rounded-full"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        {/* Replace 'myImage.svg' with the path to your SVG image */}
+        <image href="public/logo192.png" width="40" height="40" />
+      </svg>
+    </div>
+  );
+};
+
+export default Head;

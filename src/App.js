@@ -1,10 +1,12 @@
 import './App.css';
+import Head from './components/head';
 
 const LeftHand = require('./components/LeftHand');
 const RightHand = require('./components/RightHand');
 const LeftLeg = require('./components/LeftLeg');
 const RightLeg = require('./components/RightLeg');
-const head = require('./components/head');
+// TODO turn into a component
+// const head = require('./components/head');
 const body = require('./components/body');
 
 
@@ -16,7 +18,7 @@ function App() {
       {RightHand}
       {LeftLeg}
       {RightLeg}
-      {head}
+      <Head/>
       {body}
     </div>
   );
