@@ -1,5 +1,6 @@
 import '../styles/App.css';
-import Head from './head';
+import Head from './head.js';
+import headimage from '../images/head.svg';
 
 const LeftHand = require('./LeftHand');
 const RightHand = require('./RightHand');
@@ -10,6 +11,8 @@ const RightLeg = require('./RightLeg');
 const body = require('./body');
 
 
+
+
 function App() {
   return (
     <div className="App">
@@ -18,7 +21,7 @@ function App() {
       {RightHand}
       {LeftLeg}
       {RightLeg}
-      <Head/>
+      <Head image={headimage}/>
       {body}
     </div>
   );
