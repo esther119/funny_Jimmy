@@ -1,0 +1,35 @@
+.jimmy {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 550px;
+    font-size: 50px;
+  }
+  
+.head {
+    background: rgba(51, 170, 51, .2) ; /* for dev */
+    position: relative;
+    left: 450px;
+
+}
+
+.left-hand {
+    background: rgba(170, 51, 51, 0.2); /* for dev */
+    position: relative;
+    left: 420px;
+    top: 220px;
+}
+
+.right-hand {
+    background: rgba(51, 55, 170, 0.2); /* for dev */
+    position: relative;
+    left: 480px;
+    top: 220px;
+}
+.body {
+    background: rgba(170, 144, 51, 0.2); /* for dev */
+    position: relative;
+    right: 150px;
+    z-index: -1;
+}

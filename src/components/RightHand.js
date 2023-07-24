@@ -1,12 +1,21 @@
-// Import the html-react-parser package
-const React = require('react');
-const htmlReactParser = require('html-react-parser');
+import React, { useRef } from 'react';
+import audioFile from '../sound/guess_how_much.mp3'
+import rightHandImage from '../images/righthand.svg';
 
-// Your SVG code
-const svgCode = '<svg width="400" height="110"><rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" /></svg>';
+const RightHand = () => {
+  const handleClick = () => {
+    const sound = new Audio(audioFile);
+    sound.play();
+  };
 
-// Convert the SVG code to JSX
-const svgComponent = htmlReactParser(svgCode);
+  return (
+    <div>         
+        <img src={rightHandImage}
+        onClick={handleClick}
+        style={{ cursor: 'pointer' }}
+        />
+    </div>
+  );
+};
 
-// Export the JSX component so you can use it in other files
-module.exports = svgComponent;
+export default RightHand;
